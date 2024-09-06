@@ -3,17 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
   height: 100%;
   width: 100%;
   background-color: #111;
 }
-.main{
+
+.main {
   height: 100%;
   width: 100%;
   text-align: center;
 }
+
 .ele {
   height: 120px;
   width: 100%;
@@ -24,7 +27,8 @@ html {
   font-weight: 900;
   position: relative;
 }
-.ele img{
+
+.ele img {
   height: 100px;
   width: 100px;
   object-fit: cover;
@@ -34,4 +38,6 @@ html {
   align-items: center;
   position: absolute;
   opacity: 0;
+  mix-blend-mode: difference;
+  transition: all linear 1;
 }

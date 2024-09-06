@@ -1,10 +1,15 @@
-let elem=document.querySelector(".ele");
-let main=document.querySelector(".main")
-let img=document.querySelector(".ele img");
-elem.addEventListener("mousemove",function(dept){
-img.style.left=dept.x+"px"
-img.style.top=dept.y+"px"
-})
-elem.addEventListener("mousleave",function(dept){
-   img.style.opacity=1
+let elem = document.querySelectorAll(".ele");
+
+elem.forEach(function (val) {
+    val.addEventListener("mousemove", function () {
+        val.childNodes[1].style.opacity = 1
+        val.style.backgroundColor = "#060400";
+        val.style.fontSize = "20px";
     })
+    val.addEventListener("mouseleave", function () {
+        val.childNodes[1].style.opacity = 0
+        val.style.backgroundColor = "transparent";
+        val.style.fontSize = "30px";
+    })
+});
+alert("click ok to enter!")
