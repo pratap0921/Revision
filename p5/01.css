@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #ccb3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 1s;
+}
+p{
+    font-size: 70px;
+    font-family: arial;
+    font-weight: 900;
+    color: #fff;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
+}
